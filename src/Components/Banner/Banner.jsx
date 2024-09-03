@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaGithub, FaNodeJs } from "react-icons/fa";
-import { SiPhp, SiTailwindcss, SiJquery, SiVite, SiPostman, SiMongodb, SiNextdotjs } from "react-icons/si";
+import { SiPhp, SiTailwindcss, SiJquery, SiVite, SiPostman, SiMongodb } from "react-icons/si";
 import { TbBrandMysql } from "react-icons/tb";
 import { IoLogoPython, IoLogoJavascript, IoLogoFigma } from "react-icons/io5";
-import { BiLogoTypescript } from "react-icons/bi";
+import { FaReact } from "react-icons/fa";
 
 const Banner = ({ togglePlay }) => {
   useEffect(() => {
@@ -67,13 +67,13 @@ const Banner = ({ togglePlay }) => {
         </div>
         
         <div data-aos="fade-up" data-aos-delay="900" className="text-6xl text-white text-center grid place-items-center w-36 border border-white-500 rounded-lg py-3 hover:bg-gradient-to-r from-primary to-secondary hover:shadow-[0_0_40px_#007cfff0] hover:text-black bg-black relative z-10">
-          <SiNextdotjs />
-          <p className="text-[20px] font-semibold">Next.js</p>
+        <SiMongodb />
+          <p className="text-[20px] font-semibold">Mongo DB</p>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="1000" className="text-6xl text-white text-center grid place-items-center w-36 border border-white-500 rounded-lg py-3 hover:bg-gradient-to-r from-primary to-secondary hover:shadow-[0_0_40px_#007cfff0] hover:text-black bg-black relative z-10">
-          <BiLogoTypescript />
-          <p className="text-[20px] font-semibold">Typescript</p>
+          <FaReact />
+          <p className="text-[20px] font-semibold">React</p>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="1100" className="text-6xl text-white text-center grid place-items-center w-36 border border-white-500 rounded-lg py-3 hover:bg-gradient-to-r from-primary to-secondary hover:shadow-[0_0_40px_#007cfff0] hover:text-black bg-black relative z-10">

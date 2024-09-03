@@ -1,5 +1,4 @@
-require('dotenv').config(); // Load environment variables
-
+// backend/server.cjs
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const cors = require('cors');
@@ -15,14 +14,14 @@ app.use(cors()); // Enable CORS for all routes
 // MongoDB Connection URL and Database Name
 const uri = process.env.MONGODB_URI; // MongoDB URI from environment variable
 const dbName = 'shaina_webportfolio'; // Database name
-const collectionName = 'contacts'; // Collection name
+const collectionName = 'contacts'; // Collection name (ensure consistent case)
 
 // Nodemailer Transporter Configuration for Gmail
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER, // Use environment variable for Gmail email
-    pass: process.env.EMAIL_PASS, // Use environment variable for Gmail password
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -41,22 +40,13 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
     app.post('/submit-form', async (req, res) => {
       const formData = req.body;
 
-      // Basic validation
-      if (!formData.firstName || !formData.lastName || !formData.email || !formData.message || !formData.inquiryType) {
-        return res.status(400).json({ message: 'Please fill out all fields' });
-      }
-
       try {
         // Insert form data into MongoDB
-        await collection.insertOne(formData);
-        console.log('Form data inserted');
+        const result = await collection.insertOne(formData);
+        console.log('Form data inserted:', result);
 
-        // Send response to user immediately
-        res.status(200).json({ message: 'Form submitted successfully' });
-
-        // Send confirmation email to the user
         const userMailOptions = {
-          from: process.env.EMAIL_USER,
+          from: 'shainabiancaf.delacruz@gmail.com',
           to: formData.email,
           subject: 'Form Submission Successful',
           html: `
@@ -82,10 +72,10 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
           }
         });
 
-        // Send notification email to admin
+        // Send HTML email notification to fshaina75@gmail.com with form details
         const adminMailOptions = {
-          from: process.env.EMAIL_USER,
-          to: process.env.EMAIL_USER, // Admin email
+          from: 'shainabiancaf.delacruz@gmail.com',
+          to: 'fshaina75@gmail.com',
           subject: 'New Form Submission',
           html: `
             <html>
@@ -103,7 +93,7 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
                 </div>
               </body>
             </html>
-          `,
+          `
         };
 
         transporter.sendMail(adminMailOptions, (error, info) => {
@@ -114,6 +104,7 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
           }
         });
 
+        res.status(200).json({ message: 'Form submitted successfully' });
       } catch (error) {
         console.error('Error inserting form data:', error);
         res.status(500).json({ message: 'Failed to submit form' });

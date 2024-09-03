@@ -1,26 +1,34 @@
 import React from "react";
 import th from "../../assets/ss.jpg"; // Example import for an image
+import eyesmile from "../../assets/eyesmile.png"; // Example import for an image
+import voucher from "../../assets/voucher.png"; // Example import for an image
+import python from "../../assets/python.png"; // Example import for an image
+
 
 const FeaturesData = [
   {
-    name: "Project 1",
-    imageSrc: th, // Replace with your actual image imports
-    link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    name: "EyeSmile Dental and Optical Clinic Management System",
+    imageSrc: eyesmile, // Replace with your actual image imports
+    link: "https://eyesmileclinic.com/",
+    description: "Web-based dental clinic management system with HTML, CSS, Bootstrap, JQuery, JavaScript, PHP, and MySQL. It manages patient records, appointments, billing, treatment history, and inventory, with secure login and role-based access.",
     aosDelay: "300",
   },
   {
-    name: "Project 2",
-    imageSrc: th, // Replace with your actual image imports
+    name: "Eurasia Voucher Disbursement Management System",
+    imageSrc: voucher, // Replace with your actual image imports
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "The system facilitated the tracking of product payments, including the approval process, bank details, and the companies being paid. Users could view the type of product paid for, the associated pharmaceutical company, and the payment status.",
     aosDelay: "500",
   },
   {
-    name: "Project 3",
-    imageSrc: th, // Replace with your actual image imports
+    name: (
+      <>
+        Python <br /> Appointment Management System
+      </>
+    ),
+    imageSrc: python, // Replace with your actual image imports
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "This simple Python personal project is a basic CRUD system for managing customer appointments. Users can create, read, update, and delete appointment records, including date, time, and service details. Ideal for basic appointment management needs. ",
     aosDelay: "700",
   },
 ];
@@ -54,10 +62,12 @@ const Features = () => {
                     className="w-full max-w-[500px]"
                   />
                 </div>
-                <h1 className="text-2xl">{data.name}</h1>
-                <p>{data.description}</p>
+                <h1 className="text-2xl font-bold">{data.name}</h1>
+                <p className="text-justify">{data.description}</p>
                 <a
                   href={data.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block secondary-btn text-sm font-semibold py-2 text-primary group-hover:text-black duration-300"
                 >
                   Learn More
