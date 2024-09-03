@@ -50,13 +50,13 @@ const Hero = ({ togglePlay }) => {
                 </a>
               </div>
               <div className="flex gap-2">
-                <a data-aos="fade-up" data-aos-delay="700" href="#"  className="text-4xl hover:text-[40px]">
+                <a data-aos="fade-up" data-aos-delay="700" href="https://www.linkedin.com/in/shaina-bianca-dela-cruz-5b58b4274/"  className="text-4xl hover:text-[40px]">
                 <FaLinkedin />
                 </a>
-                <a data-aos="fade-up" data-aos-delay="900" href="#"  className="text-4xl hover:text-[40px]">
+                <a data-aos="fade-up" data-aos-delay="900" href="https://www.facebook.com/profile.php?id=61561609829188"  className="text-4xl hover:text-[40px]">
                 <FaFacebookSquare />
                 </a>
-                <a data-aos="fade-up" data-aos-delay="1000" href="#"  className="text-4xl hover:text-[40px]">
+                <a data-aos="fade-up" data-aos-delay="1000" href="https://github.com/ShainaBiancaDelaCruz?tab=repositories"  className="text-4xl hover:text-[40px]">
                 <FaGithubSquare />
                 </a>
               </div>

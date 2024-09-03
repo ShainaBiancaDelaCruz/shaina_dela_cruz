@@ -13,13 +13,13 @@ const Footer = () => {
           <h1 className="text-2xl font-bold">haina</h1>
         </div>
         <div className="flex justify-center mt-5 gap-2">
-                <a href="#"  className="text-4xl hover:text-[40px]">
+                <a href="https://www.linkedin.com/in/shaina-bianca-dela-cruz-5b58b4274/"  className="text-4xl hover:text-[40px]">
                 <FaLinkedin />
                 </a>
-                <a href="#"  className="text-4xl hover:text-[40px]">
+                <a href="https://www.facebook.com/profile.php?id=61561609829188"  className="text-4xl hover:text-[40px]">
                 <FaFacebookSquare />
                 </a>
-                <a href="#"  className="text-4xl hover:text-[40px]">
+                <a href="https://github.com/ShainaBiancaDelaCruz?tab=repositories"  className="text-4xl hover:text-[40px]">
                 <FaGithubSquare />
                 </a>
               </div>

@@ -16,7 +16,7 @@ const FeaturesData = [
   {
     name: "Eurasia Voucher Disbursement Management System",
     imageSrc: voucher, // Replace with your actual image imports
-    link: "#",
+    link: "https://github.com/ShainaBiancaDelaCruz/voucher",
     description: "The system facilitated the tracking of product payments, including the approval process, bank details, and the companies being paid. Users could view the type of product paid for, the associated pharmaceutical company, and the payment status.",
     aosDelay: "500",
   },
@@ -27,7 +27,7 @@ const FeaturesData = [
       </>
     ),
     imageSrc: python, // Replace with your actual image imports
-    link: "#",
+    link: "https://github.com/ShainaBiancaDelaCruz/phyton",
     description: "This simple Python personal project is a basic CRUD system for managing customer appointments. Users can create, read, update, and delete appointment records, including date, time, and service details. Ideal for basic appointment management needs. ",
     aosDelay: "700",
   },
