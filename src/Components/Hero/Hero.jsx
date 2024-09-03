@@ -30,7 +30,7 @@ const Hero = ({ togglePlay }) => {
               &quot; Innovation Sparks Success &quot;
               </p>
               <div className="flex gap-6">
-                <a href={CV} download>
+              <a href={CV} download="resume_shaina_dela_cruz.pdf">
                 <button
                   data-aos="fade-up"
                   data-aos-delay="500"
