@@ -1,6 +1,6 @@
 import React from "react";
 import StarCanvas from "../StarCanvas/StarCanvas"
-import CV from "../../assets/resume.pdf"
+import CV from "../../assets/resume_shainadelacruz.pdf"
 import { BiPlayCircle } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
