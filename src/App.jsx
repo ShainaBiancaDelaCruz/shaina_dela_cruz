@@ -6,6 +6,8 @@ import Features from "./Components/Features/Features";
 import Services from "./Components/Services/services";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import InfoSection from "./Components/InfoSection/InfoSection";
+import Certificate from "./Components/Certificate/Certificate";
 
 
 import AOS from "aos";
@@ -35,8 +37,9 @@ const App = () => {
       <Hero togglePlay={togglePlay} />
       <Banner togglePlay={togglePlay} />
       <Features />
-      <Services/>
+      <InfoSection/>
       <Contact/>
+      <Certificate/>
       <Footer />
 
     </main>

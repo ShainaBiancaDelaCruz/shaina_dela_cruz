@@ -21,8 +21,8 @@ const NavLinks = [
   },
   {
     id: 4,
-    name: "Services",
-    link: "#services",
+    name: "Certificate",
+    link: "#certificate",
   },
   {
     id: 5,

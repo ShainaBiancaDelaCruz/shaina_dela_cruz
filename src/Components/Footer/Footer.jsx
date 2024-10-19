@@ -16,7 +16,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/shaina-bianca-dela-cruz-5b58b4274/"  className="text-4xl hover:text-[40px]">
                 <FaLinkedin />
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61561609829188"  className="text-4xl hover:text-[40px]">
+                <a href="https://www.facebook.com/shainabianca.floresdelacruz" target="_blank" className="text-4xl hover:text-[40px]">
                 <FaFacebookSquare />
                 </a>
                 <a href="https://github.com/ShainaBiancaDelaCruz?tab=repositories"  className="text-4xl hover:text-[40px]">
