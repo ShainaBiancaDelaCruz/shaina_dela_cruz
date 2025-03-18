@@ -21,8 +21,14 @@ const data = {
     {
       position: "Sofware Quality Assurace Tester",
       company: "uTest",
-      duration: "Jan 2023 - Dec 2023",
+      duration: "January 2023 - Present",
       description: "Test website or web applications, and mobile applications including facial verifications, e-commerce, and entertainment website."
+    },
+    {
+      position: "Digital Marketing Specialist",
+      company: "Team Intelligence",
+      duration: "November 2024 - February 2025",
+      description: "I write news and Forex broker reviews. I also handle email marketing and lead generation to boost engagement and conversions."
     },
   ],
   achievements: [
