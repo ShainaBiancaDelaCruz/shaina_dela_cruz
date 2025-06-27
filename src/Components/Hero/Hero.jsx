@@ -9,7 +9,7 @@ import { FaGithubSquare } from "react-icons/fa";
 const Hero = ({ togglePlay }) => {
   const [text, setText] = useState("SYSTEM ANALYST");
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const phrases = ["SYSTEM ANALYST", "TECHNICAL SUPPORT", "DIGITAL MARKETING SPECIALIST"];
+  const phrases = ["SOFTWARE QUALITY ASSURANCE TESTER", "TECHNICAL SUPPORT", "DIGITAL MARKETING SPECIALIST"];
   const typingSpeed = 150; // Typing speed in milliseconds
   const pauseDuration = 1000; // Pause duration between phrases
 
